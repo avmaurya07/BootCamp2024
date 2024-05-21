@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #dee2e3, #0072ff);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 500px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+    flex: 1 1 auto;
+    min-width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    background-color: #0072ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+#weatherDisplay {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    input, button {
+        margin: 5px 0;
+    }
+}
